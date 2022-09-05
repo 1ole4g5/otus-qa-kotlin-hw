@@ -40,12 +40,7 @@ android {
         minSdk = 23
         targetSdk = 31
         applicationId = "org.isoron.uhabits"
-        testInstrumentationRunnerArguments["clearPackageData"] = "true"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    testOptions {
-        execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
 
     signingConfigs {
@@ -81,7 +76,11 @@ android {
 
     buildFeatures {
         viewBinding = true
+        compose = true
     }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.3.0" }
 }
 
 dependencies {
@@ -91,7 +90,17 @@ dependencies {
     val ktorVersion = "1.6.8"
     val espressoVersion = "3.4.0"
     val orchestrator = "1.4.0"
+    val composeUI = "1.2.1"
+    val lifecycle = "2.5.1"
 
+
+    // android compose
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeUI")
+    implementation("androidx.compose.ui:ui:$composeUI")
+    implementation("androidx.compose.ui:ui-tooling:$composeUI")
+    // fix duplicate class runtime error
+    implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycle")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle")
 
     androidTestImplementation("androidx.test:orchestrator:$orchestrator")
     androidTestImplementation("androidx.test:runner:$orchestrator")

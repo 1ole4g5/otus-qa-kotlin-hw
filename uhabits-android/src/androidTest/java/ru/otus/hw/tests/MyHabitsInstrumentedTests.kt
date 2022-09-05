@@ -1,56 +1,64 @@
 package ru.otus.hw.tests
 
-import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.compose.ui.test.*
+import androidx.test.espresso.Espresso
 import org.junit.Before
 import org.junit.Test
-import org.junit.runner.RunWith
-import ru.otus.hw.component.CheckmarkComponent
-import ru.otus.hw.component.Component
-import ru.otus.hw.component.Component.Companion.on
-import ru.otus.hw.component.FilterComponent
-import ru.otus.hw.component.IntroComponent
-import ru.otus.hw.component.habits.CreateHabitsComponent
-import ru.otus.hw.component.habits.HabitComponent
-import ru.otus.hw.component.habits.HabitTypeComponent
-import ru.otus.hw.component.habits.ListOfHabitsComponent
+import ru.otus.hw.helpers.HABIT_NAME
+import ru.otus.hw.helpers.HABIT_TYPE
+import ru.otus.hw.helpers.SKIP
 import ru.otus.hw.helpers.testScreenshots
 
 
-@RunWith(AndroidJUnit4::class)
 class MyHabitsInstrumentedTests : BaseTests() {
 
     @Before
     fun preCondition() {
-        on<IntroComponent>().selectSkipButton()
+        // select skip button
+        composeActivity.onNodeWithText(SKIP).performClick()
     }
 
     @Test
     fun testMyHabit() {
         testScreenshots(name = "Main_page")
-        on<ListOfHabitsComponent>().selectAddHabit()
-        on<HabitTypeComponent>().selectHabitType()
+        // select add habit
+        composeActivity.onNodeWithText("Add habit").performClick()
+        // select habit type
+        composeActivity.onNodeWithText(HABIT_TYPE).performClick()
         testScreenshots(name = "Create_habit_page")
-        on<CreateHabitsComponent>().create()
-            .checkHabitCreateMessage()
-        on<ListOfHabitsComponent>().scrollToCreatedHabit()
-            .selectCreatedHabit()
+        // create habit
+        // enter name
+        composeActivity.onNodeWithText("Name").performTextInput(HABIT_NAME)
+        // click on save button
+        composeActivity.onNodeWithText("Save").performClick()
+        // scroll to created habit
+        composeActivity.onNodeWithText(HABIT_NAME).performScrollTo()
+        // select created habit
+        composeActivity.onNodeWithText(HABIT_NAME).performClick()
         testScreenshots(name = "Check_created_habit")
-        on<HabitComponent>().checkHabitTitleName()
-            .checkFrequencyLabel()
+        // check title of created habit
+        composeActivity.onNodeWithText(HABIT_NAME).assertIsDisplayed()
         testScreenshots(name = "Check_created_habit_description")
-        on<Component>().pressBackButton()
-        on<ListOfHabitsComponent>().selectHabitCheckmarkButton(1)
+        // press back button
+        Espresso.pressBack()
+        // select habit checkmark first button
+        composeActivity.onAllNodesWithText("CheckmarkButtonView").onFirst().performClick()
         testScreenshots(name = "Check_mark_pop-up")
-        on<CheckmarkComponent>().selectYesButton()
+        // select Yes button
+        composeActivity.onNodeWithText("yesBtn").performClick()
         testScreenshots(name = "Check_completed_habit")
-        on<FilterComponent>().selectFilter()
-            .toggleCompleted()
-        on<ListOfHabitsComponent>().checkThatHabitIsNotDisplayed()
+        // select filter
+        composeActivity.onNodeWithText("Filter").performClick()
+        // toggle completed
+        composeActivity.onNodeWithText("Hide completed").performClick()
+        // check that habit is not displayed
+        composeActivity.onAllNodesWithText(HABIT_NAME).assertCountEquals(0)
         testScreenshots(name = "Check_that_habit_is_not_in_not-completed_habit_filter")
 
         // переход на страницу профиля, проверка значения состояния здоровья;
-        // on<ProfileComponent>.selectProfile()
-        //          .checkHealthState()
+        // composeActivity.onNodeWithText("Profile").performClick()
+        // composeActivity.onNodeWithText("Health info").assertIsDisplayed()
+        //
         // нажатие на кнопку "Поделиться" и проверка вызова Intent.ACTION_SEND;
         //
         // intending(not(isInternal())).respondWith(Instrumentation.ActivityResult(
@@ -58,7 +66,8 @@ class MyHabitsInstrumentedTests : BaseTests() {
         //                null
         //            )
         //        )
-        //        on<ShareComponent>.selectShare() //onView(withId(R.id.share_id_button)).perform(click())
+        //
+        //      composeActivity.onNodeWithText("ShareTo").performClick()
         //
         //        intended(
         //            allOf(
