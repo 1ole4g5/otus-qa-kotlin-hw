@@ -1,0 +1,31 @@
+[ {
+  "uid" : "f68ecd7604bb1fda",
+  "name" : "fetchPost",
+  "time" : {
+    "start" : 1663695556179,
+    "stop" : 1663695556774,
+    "duration" : 595
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "26f34b66ac48c6ce",
+  "name" : "fetchGet",
+  "time" : {
+    "start" : 1663695556866,
+    "stop" : 1663695556877,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23a6117f344dabe1",
+  "name" : "fetchDelete",
+  "time" : {
+    "start" : 1663695556849,
+    "stop" : 1663695556861,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

@@ -91,6 +91,7 @@ dependencies {
     val okhttpVer = "4.9.0"
     val coroutinesAndroid = "1.6.1"
     val coroutinesCore = "1.6.1"
+    val allure = "2.4.0"
 
 
     // Coroutine
@@ -102,7 +103,11 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVer")
     // OkHttp
     implementation("com.squareup.okhttp3:logging-interceptor:$okhttpVer")
-    //implementation("com.android.tools.r8.internal.ru.gildor.coroutines:kotlin-coroutines-okhttp:1.0")
+    // Allure
+    testImplementation("io.qameta.allure:allure-kotlin-model:$allure")
+    testImplementation("io.qameta.allure:allure-kotlin-commons:$allure")
+    testImplementation("io.qameta.allure:allure-kotlin-junit4:$allure")
+    testImplementation("io.qameta.allure:allure-kotlin-android:$allure")
 
     androidTestImplementation("com.google.dagger:dagger:$daggerVersion")
     androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.28.3")

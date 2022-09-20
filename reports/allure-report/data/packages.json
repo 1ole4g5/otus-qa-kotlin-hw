@@ -1,0 +1,60 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "ru.otus.hw.tests",
+    "children" : [ {
+      "name" : "fetchPost",
+      "uid" : "f68ecd7604bb1fda",
+      "parentUid" : "8c1d57c4c6215821864c5e07787b9503",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663695556179,
+        "stop" : 1663695556774,
+        "duration" : 595
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "fetchDelete",
+      "uid" : "23a6117f344dabe1",
+      "parentUid" : "8c1d57c4c6215821864c5e07787b9503",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663695556849,
+        "stop" : 1663695556861,
+        "duration" : 12
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "fetchGet",
+      "uid" : "26f34b66ac48c6ce",
+      "parentUid" : "8c1d57c4c6215821864c5e07787b9503",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663695556866,
+        "stop" : 1663695556877,
+        "duration" : 11
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.otus.hw.tests"
+  } ]
+}

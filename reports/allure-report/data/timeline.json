@@ -1,0 +1,64 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Pro-Oleg.local",
+    "children" : [ {
+      "name" : "6892@MacBook-Pro-Oleg.local.Test worker(1)",
+      "children" : [ {
+        "name" : "fetchPost",
+        "uid" : "f68ecd7604bb1fda",
+        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556179,
+          "stop" : 1663695556774,
+          "duration" : 595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fetchGet",
+        "uid" : "26f34b66ac48c6ce",
+        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556866,
+          "stop" : 1663695556877,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fetchDelete",
+        "uid" : "23a6117f344dabe1",
+        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556849,
+          "stop" : 1663695556861,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de3eb71ba6fe9005cc2692573ea96530"
+    } ],
+    "uid" : "765853efe2677616bbc15e6a4fd5bb11"
+  } ]
+}

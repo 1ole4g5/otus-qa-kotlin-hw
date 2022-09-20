@@ -1,0 +1,72 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "MyHabitsAPITests",
+    "children" : [ {
+      "name" : "Создание привычки",
+      "children" : [ {
+        "name" : "fetchPost",
+        "uid" : "f68ecd7604bb1fda",
+        "parentUid" : "54ed5990f38145cef4aceb6d3a6f4c83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556179,
+          "stop" : 1663695556774,
+          "duration" : 595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "54ed5990f38145cef4aceb6d3a6f4c83"
+    }, {
+      "name" : "Удаление привычки",
+      "children" : [ {
+        "name" : "fetchDelete",
+        "uid" : "23a6117f344dabe1",
+        "parentUid" : "782bc1302fdc9b5c10d99e000b1bcf47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556849,
+          "stop" : 1663695556861,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "782bc1302fdc9b5c10d99e000b1bcf47"
+    }, {
+      "name" : "Получение списка привычек",
+      "children" : [ {
+        "name" : "fetchGet",
+        "uid" : "26f34b66ac48c6ce",
+        "parentUid" : "a7bb79c533732f738f8aac86ae942341",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663695556866,
+          "stop" : 1663695556877,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7bb79c533732f738f8aac86ae942341"
+    } ],
+    "uid" : "091faa1b9e874a51dc3df68fbaa69ba1"
+  } ]
+}
