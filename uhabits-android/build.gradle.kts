@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.konan.target.HostManager.Companion.hostName
+
 /*
  * Copyright (C) 2016-2021 Álinson Santos Xavier <git@axavier.org>
  *
@@ -40,12 +42,7 @@ android {
         minSdk = 23
         targetSdk = 31
         applicationId = "org.isoron.uhabits"
-        testInstrumentationRunnerArguments["clearPackageData"] = "true"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    testOptions {
-        execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
 
     signingConfigs {
@@ -70,6 +67,7 @@ android {
 
         getByName("debug") {
             isTestCoverageEnabled = true
+            isDebuggable = true
         }
     }
 
@@ -89,15 +87,23 @@ dependencies {
     val kotlinVersion = "1.7.10"
     val kxCoroutinesVersion = "1.6.4"
     val ktorVersion = "1.6.8"
-    val espressoVersion = "3.4.0"
-    val orchestrator = "1.4.0"
+    val retrofitVer = "2.9.0"
+    val okhttpVer = "4.9.0"
+    val coroutinesAndroid = "1.6.1"
+    val coroutinesCore = "1.6.1"
 
 
-    androidTestImplementation("androidx.test:orchestrator:$orchestrator")
-    androidTestImplementation("androidx.test:runner:$orchestrator")
-    androidTestImplementation("androidx.test.espresso:espresso-intents:$espressoVersion")
-    androidTestImplementation("androidx.test.espresso:espresso-contrib:$espressoVersion")
-    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoVersion")
+    // Coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesAndroid")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCore")
+    implementation("ru.gildor.coroutines:kotlin-coroutines-okhttp:1.0")
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVer")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVer")
+    // OkHttp
+    implementation("com.squareup.okhttp3:logging-interceptor:$okhttpVer")
+    //implementation("com.android.tools.r8.internal.ru.gildor.coroutines:kotlin-coroutines-okhttp:1.0")
+
     androidTestImplementation("com.google.dagger:dagger:$daggerVersion")
     androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.28.3")
     androidTestImplementation("io.ktor:ktor-client-mock:$ktorVersion")
@@ -131,6 +137,7 @@ dependencies {
     testImplementation("com.google.dagger:dagger:$daggerVersion")
     testImplementation("junit:junit:4.13.2")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+    testImplementation("com.squareup.okhttp3:mockwebserver:$okhttpVer")
 }
 
 kapt {
