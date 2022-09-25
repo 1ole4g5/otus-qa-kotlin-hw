@@ -7,13 +7,13 @@
       "name" : "Создание привычки",
       "children" : [ {
         "name" : "fetchPost",
-        "uid" : "f68ecd7604bb1fda",
+        "uid" : "d7b0b8a82c07421d",
         "parentUid" : "54ed5990f38145cef4aceb6d3a6f4c83",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556179,
-          "stop" : 1663695556774,
-          "duration" : 595
+          "start" : 1664111874792,
+          "stop" : 1664111876343,
+          "duration" : 1551
         },
         "flaky" : false,
         "newFailed" : false,
@@ -28,13 +28,13 @@
       "name" : "Удаление привычки",
       "children" : [ {
         "name" : "fetchDelete",
-        "uid" : "23a6117f344dabe1",
+        "uid" : "406cfddde73cd57a",
         "parentUid" : "782bc1302fdc9b5c10d99e000b1bcf47",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556849,
-          "stop" : 1663695556861,
-          "duration" : 12
+          "start" : 1664111876415,
+          "stop" : 1664111876435,
+          "duration" : 20
         },
         "flaky" : false,
         "newFailed" : false,
@@ -49,13 +49,13 @@
       "name" : "Получение списка привычек",
       "children" : [ {
         "name" : "fetchGet",
-        "uid" : "26f34b66ac48c6ce",
+        "uid" : "1ef9e22068aa3b06",
         "parentUid" : "a7bb79c533732f738f8aac86ae942341",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556866,
-          "stop" : 1663695556877,
-          "duration" : 11
+          "start" : 1664111876440,
+          "stop" : 1664111876457,
+          "duration" : 17
         },
         "flaky" : false,
         "newFailed" : false,

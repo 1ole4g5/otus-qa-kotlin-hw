@@ -1,30 +1,30 @@
 [ {
-  "uid" : "26f34b66ac48c6ce",
-  "name" : "fetchGet",
-  "time" : {
-    "start" : 1663695556866,
-    "stop" : 1663695556877,
-    "duration" : 11
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f68ecd7604bb1fda",
+  "uid" : "d7b0b8a82c07421d",
   "name" : "fetchPost",
   "time" : {
-    "start" : 1663695556179,
-    "stop" : 1663695556774,
-    "duration" : 595
+    "start" : 1664111874792,
+    "stop" : 1664111876343,
+    "duration" : 1551
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "23a6117f344dabe1",
+  "uid" : "1ef9e22068aa3b06",
+  "name" : "fetchGet",
+  "time" : {
+    "start" : 1664111876440,
+    "stop" : 1664111876457,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "406cfddde73cd57a",
   "name" : "fetchDelete",
   "time" : {
-    "start" : 1663695556849,
-    "stop" : 1663695556861,
-    "duration" : 12
+    "start" : 1664111876415,
+    "stop" : 1664111876435,
+    "duration" : 20
   },
   "status" : "passed",
   "severity" : "critical"

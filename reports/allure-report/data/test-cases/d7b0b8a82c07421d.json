@@ -1,12 +1,12 @@
 {
-  "uid" : "23a6117f344dabe1",
-  "name" : "fetchDelete",
-  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchDelete",
-  "historyId" : "82cfc2eed37522dfeaa71c1470acdbe0",
+  "uid" : "d7b0b8a82c07421d",
+  "name" : "fetchPost",
+  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchPost",
+  "historyId" : "238abc9b64bc2b3f506aa6ed7167dd96",
   "time" : {
-    "start" : 1663695556849,
-    "stop" : 1663695556861,
-    "duration" : 12
+    "start" : 1664111874792,
+    "stop" : 1664111876343,
+    "duration" : 1551
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Проверяем успешный статус ответа сервера SUCCESS",
       "time" : {
-        "start" : 1663695556859,
-        "stop" : 1663695556859,
-        "duration" : 0
+        "start" : 1664111876332,
+        "stop" : 1664111876337,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,10 +34,10 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Проверяем, что не существует параметра name со значение null",
+      "name" : "Проверяем, что привычка создана с необходимым именем Не забывать про состояние базы данных",
       "time" : {
-        "start" : 1663695556860,
-        "stop" : 1663695556860,
+        "start" : 1664111876339,
+        "stop" : 1664111876339,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,7 +65,7 @@
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
   }, {
     "name" : "testMethod",
-    "value" : "fetchDelete"
+    "value" : "fetchPost"
   }, {
     "name" : "suite",
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
@@ -74,7 +74,7 @@
     "value" : "MacBook-Pro-Oleg.local"
   }, {
     "name" : "thread",
-    "value" : "6892@MacBook-Pro-Oleg.local.Test worker(1)"
+    "value" : "2011@MacBook-Pro-Oleg.local.Test worker(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -83,7 +83,7 @@
     "value" : "kotlin"
   }, {
     "name" : "story",
-    "value" : "Удаление привычки"
+    "value" : "Создание привычки"
   }, {
     "name" : "severity",
     "value" : "critical"
@@ -104,6 +104,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "23a6117f344dabe1.json",
+  "source" : "d7b0b8a82c07421d.json",
   "parameterValues" : [ ]
 }

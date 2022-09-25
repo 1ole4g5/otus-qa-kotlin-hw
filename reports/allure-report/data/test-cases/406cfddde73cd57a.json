@@ -1,12 +1,12 @@
 {
-  "uid" : "26f34b66ac48c6ce",
-  "name" : "fetchGet",
-  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchGet",
-  "historyId" : "6950642e63bf2d83c891f7b01cf496b6",
+  "uid" : "406cfddde73cd57a",
+  "name" : "fetchDelete",
+  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchDelete",
+  "historyId" : "82cfc2eed37522dfeaa71c1470acdbe0",
   "time" : {
-    "start" : 1663695556866,
-    "stop" : 1663695556877,
-    "duration" : 11
+    "start" : 1664111876415,
+    "stop" : 1664111876435,
+    "duration" : 20
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,8 +21,8 @@
     "steps" : [ {
       "name" : "Проверяем успешный статус ответа сервера SUCCESS",
       "time" : {
-        "start" : 1663695556876,
-        "stop" : 1663695556876,
+        "start" : 1664111876434,
+        "stop" : 1664111876434,
         "duration" : 0
       },
       "status" : "passed",
@@ -34,10 +34,10 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Проверяем, что параметр name со значением first habit",
+      "name" : "Проверяем, что не существует параметра name со значение null",
       "time" : {
-        "start" : 1663695556877,
-        "stop" : 1663695556877,
+        "start" : 1664111876435,
+        "stop" : 1664111876435,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,7 +65,7 @@
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
   }, {
     "name" : "testMethod",
-    "value" : "fetchGet"
+    "value" : "fetchDelete"
   }, {
     "name" : "suite",
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
@@ -74,7 +74,7 @@
     "value" : "MacBook-Pro-Oleg.local"
   }, {
     "name" : "thread",
-    "value" : "6892@MacBook-Pro-Oleg.local.Test worker(1)"
+    "value" : "2011@MacBook-Pro-Oleg.local.Test worker(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -83,10 +83,10 @@
     "value" : "kotlin"
   }, {
     "name" : "story",
-    "value" : "Получение списка привычек"
+    "value" : "Удаление привычки"
   }, {
     "name" : "severity",
-    "value" : "normal"
+    "value" : "critical"
   }, {
     "name" : "feature",
     "value" : "MyHabitsAPITests"
@@ -99,11 +99,11 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "26f34b66ac48c6ce.json",
+  "source" : "406cfddde73cd57a.json",
   "parameterValues" : [ ]
 }

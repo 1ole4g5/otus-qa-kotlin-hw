@@ -4,16 +4,16 @@
   "children" : [ {
     "name" : "MacBook-Pro-Oleg.local",
     "children" : [ {
-      "name" : "6892@MacBook-Pro-Oleg.local.Test worker(1)",
+      "name" : "2011@MacBook-Pro-Oleg.local.Test worker(1)",
       "children" : [ {
-        "name" : "fetchPost",
-        "uid" : "f68ecd7604bb1fda",
-        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "name" : "fetchDelete",
+        "uid" : "406cfddde73cd57a",
+        "parentUid" : "088c9ebd5f622781947308b0aa77260d",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556179,
-          "stop" : 1663695556774,
-          "duration" : 595
+          "start" : 1664111876415,
+          "stop" : 1664111876435,
+          "duration" : 20
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
         "parameters" : [ ]
       }, {
         "name" : "fetchGet",
-        "uid" : "26f34b66ac48c6ce",
-        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "uid" : "1ef9e22068aa3b06",
+        "parentUid" : "088c9ebd5f622781947308b0aa77260d",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556866,
-          "stop" : 1663695556877,
-          "duration" : 11
+          "start" : 1664111876440,
+          "stop" : 1664111876457,
+          "duration" : 17
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,14 +40,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       }, {
-        "name" : "fetchDelete",
-        "uid" : "23a6117f344dabe1",
-        "parentUid" : "de3eb71ba6fe9005cc2692573ea96530",
+        "name" : "fetchPost",
+        "uid" : "d7b0b8a82c07421d",
+        "parentUid" : "088c9ebd5f622781947308b0aa77260d",
         "status" : "passed",
         "time" : {
-          "start" : 1663695556849,
-          "stop" : 1663695556861,
-          "duration" : 12
+          "start" : 1664111874792,
+          "stop" : 1664111876343,
+          "duration" : 1551
         },
         "flaky" : false,
         "newFailed" : false,
@@ -57,7 +57,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "de3eb71ba6fe9005cc2692573ea96530"
+      "uid" : "088c9ebd5f622781947308b0aa77260d"
     } ],
     "uid" : "765853efe2677616bbc15e6a4fd5bb11"
   } ]

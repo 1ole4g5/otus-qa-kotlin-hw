@@ -1,12 +1,12 @@
 {
-  "uid" : "f68ecd7604bb1fda",
-  "name" : "fetchPost",
-  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchPost",
-  "historyId" : "238abc9b64bc2b3f506aa6ed7167dd96",
+  "uid" : "1ef9e22068aa3b06",
+  "name" : "fetchGet",
+  "fullName" : "ru.otus.hw.tests.MyHabitsAPITests.fetchGet",
+  "historyId" : "6950642e63bf2d83c891f7b01cf496b6",
   "time" : {
-    "start" : 1663695556179,
-    "stop" : 1663695556774,
-    "duration" : 595
+    "start" : 1664111876440,
+    "stop" : 1664111876457,
+    "duration" : 17
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Проверяем успешный статус ответа сервера SUCCESS",
       "time" : {
-        "start" : 1663695556762,
-        "stop" : 1663695556768,
-        "duration" : 6
+        "start" : 1664111876455,
+        "stop" : 1664111876455,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,11 +34,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Проверяем, что привычка создана с необходимым именем Не забывать про состояние базы данных",
+      "name" : "Проверяем, что параметр name со значением first habit",
       "time" : {
-        "start" : 1663695556768,
-        "stop" : 1663695556769,
-        "duration" : 1
+        "start" : 1664111876456,
+        "stop" : 1664111876456,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +65,7 @@
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
   }, {
     "name" : "testMethod",
-    "value" : "fetchPost"
+    "value" : "fetchGet"
   }, {
     "name" : "suite",
     "value" : "ru.otus.hw.tests.MyHabitsAPITests"
@@ -74,7 +74,7 @@
     "value" : "MacBook-Pro-Oleg.local"
   }, {
     "name" : "thread",
-    "value" : "6892@MacBook-Pro-Oleg.local.Test worker(1)"
+    "value" : "2011@MacBook-Pro-Oleg.local.Test worker(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -83,10 +83,10 @@
     "value" : "kotlin"
   }, {
     "name" : "story",
-    "value" : "Создание привычки"
+    "value" : "Получение списка привычек"
   }, {
     "name" : "severity",
-    "value" : "critical"
+    "value" : "normal"
   }, {
     "name" : "feature",
     "value" : "MyHabitsAPITests"
@@ -99,11 +99,11 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "critical",
+    "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f68ecd7604bb1fda.json",
+  "source" : "1ef9e22068aa3b06.json",
   "parameterValues" : [ ]
 }

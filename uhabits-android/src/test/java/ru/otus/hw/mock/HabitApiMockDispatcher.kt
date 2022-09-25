@@ -3,6 +3,7 @@ package ru.otus.hw.mock
 import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.RecordedRequest
+import ru.otus.hw.database.transactionMock
 
 class HabitApiMockDispatcher : Dispatcher() {
 
@@ -10,10 +11,10 @@ class HabitApiMockDispatcher : Dispatcher() {
         return when (request.path) {
             "/habit" -> MockResponse()
                 .setResponseCode(200)
-                .setBody("{\"name\": \"first habit\", \"name2\": \"Не забывать про состояние базы данных\", \"name3\": \"third habit\"}")
+                .setBody(transactionMock()[0])
             "/habit/:1" -> MockResponse()
                 .setResponseCode(200)
-                .setBody("{\"name2\": \"Не забывать про состояние базы данных\", \"name3\": \"third habit\"}")
+                .setBody(transactionMock()[1])
             else -> MockResponse()
                 .setResponseCode(200)
                 .setBody(

@@ -1,0 +1,97 @@
+{
+    "name": "fetchDelete",
+    "start": 1664111876415,
+    "stop": 1664111876435,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем успешный статус ответа сервера SUCCESS",
+            "start": 1664111876434,
+            "stop": 1664111876434,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что не существует параметра name со значение null",
+            "start": 1664111876435,
+            "stop": 1664111876435,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "1c161f9d-2835-4782-96b3-9a3e7393c4b4",
+    "historyId": "82cfc2eed37522dfeaa71c1470acdbe0",
+    "fullName": "ru.otus.hw.tests.MyHabitsAPITests.fetchDelete",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.otus.hw.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.otus.hw.tests.MyHabitsAPITests"
+        },
+        {
+            "name": "testMethod",
+            "value": "fetchDelete"
+        },
+        {
+            "name": "suite",
+            "value": "ru.otus.hw.tests.MyHabitsAPITests"
+        },
+        {
+            "name": "host",
+            "value": "MacBook-Pro-Oleg.local"
+        },
+        {
+            "name": "thread",
+            "value": "2011@MacBook-Pro-Oleg.local.Test worker(1)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Удаление привычки"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "feature",
+            "value": "MyHabitsAPITests"
+        }
+    ]
+}

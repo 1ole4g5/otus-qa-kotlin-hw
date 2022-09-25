@@ -1,20 +1,18 @@
 package ru.otus.hw.tests
 
 import com.google.gson.Gson
-import io.qameta.allure.android.rules.LogcatRule
-import io.qameta.allure.android.rules.ScreenshotRule
-import io.qameta.allure.kotlin.*
-import io.qameta.allure.kotlin.Allure.attachment
 import io.qameta.allure.kotlin.Allure.step
+import io.qameta.allure.kotlin.Feature
+import io.qameta.allure.kotlin.Severity
+import io.qameta.allure.kotlin.SeverityLevel
+import io.qameta.allure.kotlin.Story
 import io.qameta.allure.kotlin.junit4.AllureRunner
-import io.qameta.allure.kotlin.junit4.DisplayName
 import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.AfterClass
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.BeforeClass
-import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import ru.otus.hw.domain.ResourceState
@@ -46,6 +44,7 @@ class MyHabitsAPITests {
             server.start()
         }
 
+
         @AfterClass
         @JvmStatic
         fun afterClass() {
@@ -67,6 +66,7 @@ class MyHabitsAPITests {
             }
         }
     }
+
 
     @Test
     @Story("Создание привычки")

@@ -1,0 +1,97 @@
+{
+    "name": "fetchGet",
+    "start": 1664111876440,
+    "stop": 1664111876457,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем успешный статус ответа сервера SUCCESS",
+            "start": 1664111876455,
+            "stop": 1664111876455,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что параметр name со значением first habit",
+            "start": 1664111876456,
+            "stop": 1664111876456,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "0386d67a-45c5-4241-b052-a4cf2f35950a",
+    "historyId": "6950642e63bf2d83c891f7b01cf496b6",
+    "fullName": "ru.otus.hw.tests.MyHabitsAPITests.fetchGet",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.otus.hw.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.otus.hw.tests.MyHabitsAPITests"
+        },
+        {
+            "name": "testMethod",
+            "value": "fetchGet"
+        },
+        {
+            "name": "suite",
+            "value": "ru.otus.hw.tests.MyHabitsAPITests"
+        },
+        {
+            "name": "host",
+            "value": "MacBook-Pro-Oleg.local"
+        },
+        {
+            "name": "thread",
+            "value": "2011@MacBook-Pro-Oleg.local.Test worker(1)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Получение списка привычек"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        },
+        {
+            "name": "feature",
+            "value": "MyHabitsAPITests"
+        }
+    ]
+}

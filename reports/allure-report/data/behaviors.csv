@@ -1,4 +1,4 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","MyHabitsAPITests","Создание привычки","0","0","1","0","0"
-"","MyHabitsAPITests","Получение списка привычек","0","0","1","0","0"
 "","MyHabitsAPITests","Удаление привычки","0","0","1","0","0"
+"","MyHabitsAPITests","Получение списка привычек","0","0","1","0","0"
+"","MyHabitsAPITests","Создание привычки","0","0","1","0","0"
